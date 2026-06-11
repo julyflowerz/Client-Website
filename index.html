@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Julio Web Studio | Custom Website Commissions</title>
+  <meta name="description" content="Request a clean, custom website for your business, portfolio, event, or personal brand. Submit your website idea and pay a deposit to start your commission.">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#application">Skip to application</a>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <span class="brand-mark">J</span> Julio Web Studio
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#services" data-i18n="navServices">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process" data-i18n="navProcess">Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing" data-i18n="navPricing">Pricing</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-lg-2" href="#application" data-i18n="navApply">Start Application</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home">
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="eyebrow" data-i18n="heroEyebrow">Custom websites for local businesses, students, creators, and car projects.</p>
+            <h1 class="display-4 fw-bold lh-1 mb-4" data-i18n="heroTitle">Tell me your website idea. I’ll help bring it online.</h1>
+            <p class="lead text-secondary mb-4" data-i18n="heroText">
+              Submit a simple application with the type of website you want, colors, style, features, and deadline. I’ll review it, contact you, and build a clean website that fits your needs.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <a class="btn btn-primary btn-lg" href="#application" data-i18n="heroButton">Submit Your Website Request</a>
+              <a class="btn btn-outline-dark btn-lg" href="#pricing" data-i18n="heroPricing">View Deposit Options</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-card shadow-lg">
+              <div class="hero-card-top">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div class="hero-card-body">
+                <div class="mini-browser-card">
+                  <span class="badge rounded-pill text-bg-primary mb-3" data-i18n="previewBadge">Website Request</span>
+                  <h2 data-i18n="previewTitle">What do you need built?</h2>
+                  <p data-i18n="previewText">Business site, portfolio, event page, restaurant menu, car build page, landing page, or anything custom.</p>
+                  <div class="preview-grid">
+                    <div>Colors</div>
+                    <div>Pages</div>
+                    <div>Features</div>
+                    <div>Budget</div>
+                  </div>
+                </div>
+                <div class="floating-note">
+                  <strong data-i18n="noteTitle">Simple for everyone</strong>
+                  <span data-i18n="noteText">Easy form, readable layout, multilingual support.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="eyebrow" data-i18n="servicesEyebrow">What I can make</p>
+          <h2 class="section-title" data-i18n="servicesTitle">Website services</h2>
+          <p class="section-subtitle" data-i18n="servicesText">Choose something simple or request a fully custom layout.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card h-100">
+              <div class="icon">🏪</div>
+              <h3 data-i18n="service1Title">Business Sites</h3>
+              <p data-i18n="service1Text">Clean pages for small businesses, services, pricing, contact info, and location.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card h-100">
+              <div class="icon">🎨</div>
+              <h3 data-i18n="service2Title">Portfolios</h3>
+              <p data-i18n="service2Text">Showcase your work, projects, photos, résumé, or personal brand.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card h-100">
+              <div class="icon">🚗</div>
+              <h3 data-i18n="service3Title">Car / Hobby Pages</h3>
+              <p data-i18n="service3Text">Build pages, galleries, specs, events, and community-style landing pages.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card h-100">
+              <div class="icon">📱</div>
+              <h3 data-i18n="service4Title">Mobile-Friendly UI</h3>
+              <p data-i18n="service4Text">Responsive layouts that work on phones, tablets, laptops, and desktops.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section-padding bg-soft">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <p class="eyebrow" data-i18n="processEyebrow">How it works</p>
+            <h2 class="section-title text-start" data-i18n="processTitle">A simple commission process</h2>
+            <p class="text-secondary" data-i18n="processText">The goal is to make the process clear, fair, and easy to understand before any work starts.</p>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="timeline">
+              <div class="timeline-item">
+                <span>1</span>
+                <div>
+                  <h3 data-i18n="step1Title">Submit your request</h3>
+                  <p data-i18n="step1Text">Tell me what website you need, the colors, style, pages, and features.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>2</span>
+                <div>
+                  <h3 data-i18n="step2Title">I review and contact you</h3>
+                  <p data-i18n="step2Text">I’ll go over your details and reply with questions, timeline, and final quote.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>3</span>
+                <div>
+                  <h3 data-i18n="step3Title">50% non-refundable deposit</h3>
+                  <p data-i18n="step3Text">The deposit reserves your project and covers the start of the design/build work.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>4</span>
+                <div>
+                  <h3 data-i18n="step4Title">Final review and remaining payment</h3>
+                  <p data-i18n="step4Text">After you approve the finished website, the remaining 50% is paid before final delivery or launch.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="eyebrow" data-i18n="pricingEyebrow">Deposits</p>
+          <h2 class="section-title" data-i18n="pricingTitle">Start with a 50% deposit</h2>
+          <p class="section-subtitle" data-i18n="pricingText">Replace the buttons below with your own Stripe Payment Links. Final prices can be adjusted after reviewing the application.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="pricing-card h-100">
+              <h3 data-i18n="basicTitle">Starter Website</h3>
+              <p class="price">$250 <span data-i18n="depositLabel">deposit</span></p>
+              <p class="text-secondary" data-i18n="basicText">Good for a simple one-page landing page.</p>
+              <ul>
+                <li data-i18n="basicPoint1">1 page</li>
+                <li data-i18n="basicPoint2">Mobile-friendly layout</li>
+                <li data-i18n="basicPoint3">Contact section</li>
+              </ul>
+              <a class="btn btn-outline-primary w-100" href="https://buy.stripe.com/REPLACE_WITH_YOUR_STARTER_DEPOSIT_LINK" target="_blank" rel="noopener" data-i18n="payStarter">Pay Starter Deposit</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pricing-card featured h-100">
+              <div class="popular" data-i18n="popular">Most Popular</div>
+              <h3 data-i18n="standardTitle">Standard Website</h3>
+              <p class="price">$500 <span data-i18n="depositLabel2">deposit</span></p>
+              <p class="text-secondary" data-i18n="standardText">Best for small businesses, portfolios, and service pages.</p>
+              <ul>
+                <li data-i18n="standardPoint1">Up to 4 pages</li>
+                <li data-i18n="standardPoint2">Custom colors and sections</li>
+                <li data-i18n="standardPoint3">Basic SEO setup</li>
+              </ul>
+              <a class="btn btn-primary w-100" href="https://buy.stripe.com/REPLACE_WITH_YOUR_STANDARD_DEPOSIT_LINK" target="_blank" rel="noopener" data-i18n="payStandard">Pay Standard Deposit</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pricing-card h-100">
+              <h3 data-i18n="customTitle">Custom Website</h3>
+              <p class="price" data-i18n="customPrice">Quote-based</p>
+              <p class="text-secondary" data-i18n="customText">For larger builds, special features, redesigns, or advanced projects.</p>
+              <ul>
+                <li data-i18n="customPoint1">Custom page count</li>
+                <li data-i18n="customPoint2">Advanced sections/features</li>
+                <li data-i18n="customPoint3">Custom quote after review</li>
+              </ul>
+              <a class="btn btn-outline-primary w-100" href="#application" data-i18n="requestQuote">Request Quote</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="deposit-note text-center mt-4" data-i18n="depositNote">
+          Deposit notice: deposits are non-refundable once work begins. The remaining balance is due after approval and before final handoff or launch.
+        </p>
+      </div>
+    </section>
+
+    <section id="application" class="section-padding bg-dark text-white">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="eyebrow text-info" data-i18n="applicationEyebrow">Application</p>
+            <h2 class="section-title text-start text-white" data-i18n="applicationTitle">Tell me what you want built</h2>
+            <p class="text-white-50" data-i18n="applicationText">
+              Fill this out with as much detail as you can. After submission, I’ll receive your request by email and contact you.
+            </p>
+
+            <div class="contact-box">
+              <h3 data-i18n="contactTitle">Need help filling it out?</h3>
+              <p data-i18n="contactText">No problem. Write what you know, and I can help you figure out the rest.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <!-- Replace YOUR_FORMSPREE_ID with your real Formspree endpoint -->
+            <form id="websiteRequestForm" class="application-form" action="https://formspree.io/f/mpqejrgj" method="POST">
+              <input type="hidden" name="_subject" value="New Website Commission Request">
+              <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off">
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label" data-i18n="labelName">Full name</label>
+                  <input id="name" name="name" type="text" class="form-control form-control-lg" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label" data-i18n="labelEmail">Email</label>
+                  <input id="email" name="email" type="email" class="form-control form-control-lg" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone" class="form-label" data-i18n="labelPhone">Phone number</label>
+                  <input id="phone" name="phone" type="tel" class="form-control form-control-lg">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="websiteType" class="form-label" data-i18n="labelWebsiteType">Website type</label>
+                  <select id="websiteType" name="website_type" class="form-select form-select-lg" required>
+                    <option value="" data-i18n="chooseOption">Choose one...</option>
+                    <option data-i18n="typeBusiness">Business website</option>
+                    <option data-i18n="typePortfolio">Portfolio</option>
+                    <option data-i18n="typeRestaurant">Restaurant/menu</option>
+                    <option data-i18n="typeEvent">Event page</option>
+                    <option data-i18n="typeCar">Car/build page</option>
+                    <option data-i18n="typeOther">Other/custom</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="description" class="form-label" data-i18n="labelDescription">Describe the website you want</label>
+                  <textarea id="description" name="description" class="form-control form-control-lg" rows="5" required placeholder="Example: I need a clean website for my detailing business with prices, photos, contact form, and a black/gold style."></textarea>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="colors" class="form-label" data-i18n="labelColors">Preferred colors</label>
+                  <input id="colors" name="preferred_colors" type="text" class="form-control form-control-lg" placeholder="Blue/white, black/red, pastel, etc.">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="style" class="form-label" data-i18n="labelStyle">Preferred UI style</label>
+                  <select id="style" name="ui_style" class="form-select form-select-lg">
+                    <option data-i18n="styleClean">Clean and modern</option>
+                    <option data-i18n="styleLuxury">Luxury/professional</option>
+                    <option data-i18n="styleFun">Fun/colorful</option>
+                    <option data-i18n="styleRetro">Retro/pixel</option>
+                    <option data-i18n="styleMinimal">Minimal/simple</option>
+                    <option data-i18n="styleUnsure">Not sure yet</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="pages" class="form-label" data-i18n="labelPages">Pages needed</label>
+                  <input id="pages" name="pages_needed" type="text" class="form-control form-control-lg" placeholder="Home, About, Services, Contact...">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="budget" class="form-label" data-i18n="labelBudget">Budget range</label>
+                  <select id="budget" name="budget_range" class="form-select form-select-lg">
+                    <option data-i18n="budgetUnsure">Not sure yet</option>
+                    <option>$500 - $1,000</option>
+                    <option>$1,000 - $2,000</option>
+                    <option>$2,000+</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="deadline" class="form-label" data-i18n="labelDeadline">Preferred deadline</label>
+                  <input id="deadline" name="deadline" type="date" class="form-control form-control-lg">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="languagePreference" class="form-label" data-i18n="labelLanguage">Preferred contact language</label>
+                  <select id="languagePreference" name="preferred_contact_language" class="form-select form-select-lg">
+                    <option>English</option>
+                    <option>Español</option>
+                    <option>Français</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="features" class="form-label" data-i18n="labelFeatures">Features you want</label>
+                  <textarea id="features" name="features" class="form-control form-control-lg" rows="3" placeholder="Online booking, gallery, payments, animations, blog, menu, Google Maps, etc."></textarea>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input id="depositAgreement" name="deposit_agreement" class="form-check-input" type="checkbox" required>
+                    <label class="form-check-label" for="depositAgreement" data-i18n="depositAgreement">
+                      I understand that if I move forward, the first 50% deposit is non-refundable once work begins.
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button id="submitButton" type="submit" class="btn btn-primary btn-lg w-100" data-i18n="submitButton">
+                    Submit Website Application
+                  </button>
+                  <p id="formStatus" class="form-status mt-3" role="status" aria-live="polite"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">© <span id="year"></span> Julio Web Studio. <span data-i18n="footerRights">All rights reserved.</span></p>
+      <a href="#application" class="footer-link" data-i18n="footerApply">Start a website request</a>
+    </div>
+  </footer>
+
+  <div class="language-selector" aria-label="Language selector">
+    <label for="languageSelect" class="visually-hidden">Select language</label>
+    <select id="languageSelect" class="form-select form-select-sm">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

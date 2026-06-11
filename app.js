@@ -1,0 +1,375 @@
+const translations = {
+  en: {
+    navServices: "Services",
+    navProcess: "Process",
+    navPricing: "Pricing",
+    navApply: "Start Application",
+    heroEyebrow: "Custom websites for local businesses, students, creators, and car projects.",
+    heroTitle: "Tell me your website idea. I’ll help bring it online.",
+    heroText: "Submit a simple application with the type of website you want, colors, style, features, and deadline. I’ll review it, contact you, and build a clean website that fits your needs.",
+    heroButton: "Submit Your Website Request",
+    heroPricing: "View Deposit Options",
+    previewBadge: "Website Request",
+    previewTitle: "What do you need built?",
+    previewText: "Business site, portfolio, event page, restaurant menu, car build page, landing page, or anything custom.",
+    noteTitle: "Simple for everyone",
+    noteText: "Easy form, readable layout, multilingual support.",
+    servicesEyebrow: "What I can make",
+    servicesTitle: "Website services",
+    servicesText: "Choose something simple or request a fully custom layout.",
+    service1Title: "Business Sites",
+    service1Text: "Clean pages for small businesses, services, pricing, contact info, and location.",
+    service2Title: "Portfolios",
+    service2Text: "Showcase your work, projects, photos, résumé, or personal brand.",
+    service3Title: "Car / Hobby Pages",
+    service3Text: "Build pages, galleries, specs, events, and community-style landing pages.",
+    service4Title: "Mobile-Friendly UI",
+    service4Text: "Responsive layouts that work on phones, tablets, laptops, and desktops.",
+    processEyebrow: "How it works",
+    processTitle: "A simple commission process",
+    processText: "The goal is to make the process clear, fair, and easy to understand before any work starts.",
+    step1Title: "Submit your request",
+    step1Text: "Tell me what website you need, the colors, style, pages, and features.",
+    step2Title: "I review and contact you",
+    step2Text: "I’ll go over your details and reply with questions, timeline, and final quote.",
+    step3Title: "50% non-refundable deposit",
+    step3Text: "The deposit reserves your project and covers the start of the design/build work.",
+    step4Title: "Final review and remaining payment",
+    step4Text: "After you approve the finished website, the remaining 50% is paid before final delivery or launch.",
+    pricingEyebrow: "Deposits",
+    pricingTitle: "Start with a 50% deposit",
+    pricingText: "Replace the buttons below with your own Stripe Payment Links. Final prices can be adjusted after reviewing the application.",
+    basicTitle: "Starter Website",
+    depositLabel: "deposit",
+    basicText: "Good for a simple one-page landing page.",
+    basicPoint1: "1 page",
+    basicPoint2: "Mobile-friendly layout",
+    basicPoint3: "Contact section",
+    payStarter: "Pay Starter Deposit",
+    popular: "Most Popular",
+    standardTitle: "Standard Website",
+    depositLabel2: "deposit",
+    standardText: "Best for small businesses, portfolios, and service pages.",
+    standardPoint1: "Up to 4 pages",
+    standardPoint2: "Custom colors and sections",
+    standardPoint3: "Basic SEO setup",
+    payStandard: "Pay Standard Deposit",
+    customTitle: "Custom Website",
+    customPrice: "Quote-based",
+    customText: "For larger builds, special features, redesigns, or advanced projects.",
+    customPoint1: "Custom page count",
+    customPoint2: "Advanced sections/features",
+    customPoint3: "Custom quote after review",
+    requestQuote: "Request Quote",
+    depositNote: "Deposit notice: deposits are non-refundable once work begins. The remaining balance is due after approval and before final handoff or launch.",
+    applicationEyebrow: "Application",
+    applicationTitle: "Tell me what you want built",
+    applicationText: "Fill this out with as much detail as you can. After submission, I’ll receive your request by email and contact you.",
+    contactTitle: "Need help filling it out?",
+    contactText: "No problem. Write what you know, and I can help you figure out the rest.",
+    labelName: "Full name",
+    labelEmail: "Email",
+    labelPhone: "Phone number",
+    labelWebsiteType: "Website type",
+    chooseOption: "Choose one...",
+    typeBusiness: "Business website",
+    typePortfolio: "Portfolio",
+    typeRestaurant: "Restaurant/menu",
+    typeEvent: "Event page",
+    typeCar: "Car/build page",
+    typeOther: "Other/custom",
+    labelDescription: "Describe the website you want",
+    labelColors: "Preferred colors",
+    labelStyle: "Preferred UI style",
+    styleClean: "Clean and modern",
+    styleLuxury: "Luxury/professional",
+    styleFun: "Fun/colorful",
+    styleRetro: "Retro/pixel",
+    styleMinimal: "Minimal/simple",
+    styleUnsure: "Not sure yet",
+    labelPages: "Pages needed",
+    labelBudget: "Budget range",
+    budgetUnsure: "Not sure yet",
+    labelDeadline: "Preferred deadline",
+    labelLanguage: "Preferred contact language",
+    labelFeatures: "Features you want",
+    depositAgreement: "I understand that if I move forward, the first 50% deposit is non-refundable once work begins.",
+    submitButton: "Submit Website Application",
+    footerRights: "All rights reserved.",
+    footerApply: "Start a website request",
+    sending: "Sending your application...",
+    success: "Thank you! Your website request was sent successfully.",
+    error: "Something went wrong. Please check your Formspree setup and try again."
+  },
+  es: {
+    navServices: "Servicios",
+    navProcess: "Proceso",
+    navPricing: "Precios",
+    navApply: "Iniciar solicitud",
+    heroEyebrow: "Sitios web personalizados para negocios, estudiantes, creadores y proyectos de autos.",
+    heroTitle: "Cuéntame tu idea de sitio web. Yo te ayudo a publicarla.",
+    heroText: "Envía una solicitud sencilla con el tipo de sitio que quieres, colores, estilo, funciones y fecha límite. La revisaré, te contactaré y crearé un sitio limpio que se ajuste a tus necesidades.",
+    heroButton: "Enviar solicitud",
+    heroPricing: "Ver opciones de depósito",
+    previewBadge: "Solicitud de sitio web",
+    previewTitle: "¿Qué necesitas crear?",
+    previewText: "Sitio de negocio, portafolio, página de evento, menú de restaurante, página de auto, landing page o algo personalizado.",
+    noteTitle: "Simple para todos",
+    noteText: "Formulario fácil, diseño legible y soporte multilingüe.",
+    servicesEyebrow: "Qué puedo crear",
+    servicesTitle: "Servicios web",
+    servicesText: "Elige algo simple o solicita un diseño totalmente personalizado.",
+    service1Title: "Sitios para negocios",
+    service1Text: "Páginas limpias para negocios pequeños, servicios, precios, contacto y ubicación.",
+    service2Title: "Portafolios",
+    service2Text: "Muestra tu trabajo, proyectos, fotos, currículum o marca personal.",
+    service3Title: "Páginas de autos / hobbies",
+    service3Text: "Páginas de proyectos, galerías, especificaciones, eventos y comunidades.",
+    service4Title: "Diseño móvil",
+    service4Text: "Diseños responsivos para teléfonos, tablets, laptops y computadoras.",
+    processEyebrow: "Cómo funciona",
+    processTitle: "Un proceso simple de comisión",
+    processText: "La meta es que el proceso sea claro, justo y fácil de entender antes de empezar.",
+    step1Title: "Envía tu solicitud",
+    step1Text: "Dime qué sitio necesitas, colores, estilo, páginas y funciones.",
+    step2Title: "Yo reviso y te contacto",
+    step2Text: "Revisaré tus detalles y responderé con preguntas, tiempo estimado y cotización final.",
+    step3Title: "Depósito no reembolsable del 50%",
+    step3Text: "El depósito reserva tu proyecto y cubre el inicio del diseño/desarrollo.",
+    step4Title: "Revisión final y pago restante",
+    step4Text: "Después de aprobar el sitio, se paga el 50% restante antes de la entrega final o publicación.",
+    pricingEyebrow: "Depósitos",
+    pricingTitle: "Empieza con un depósito del 50%",
+    pricingText: "Reemplaza los botones con tus enlaces de pago de Stripe. Los precios finales se ajustan después de revisar la solicitud.",
+    basicTitle: "Sitio inicial",
+    depositLabel: "depósito",
+    basicText: "Bueno para una landing page simple de una página.",
+    basicPoint1: "1 página",
+    basicPoint2: "Diseño móvil",
+    basicPoint3: "Sección de contacto",
+    payStarter: "Pagar depósito inicial",
+    popular: "Más popular",
+    standardTitle: "Sitio estándar",
+    depositLabel2: "depósito",
+    standardText: "Ideal para negocios pequeños, portafolios y páginas de servicios.",
+    standardPoint1: "Hasta 4 páginas",
+    standardPoint2: "Colores y secciones personalizadas",
+    standardPoint3: "SEO básico",
+    payStandard: "Pagar depósito estándar",
+    customTitle: "Sitio personalizado",
+    customPrice: "Con cotización",
+    customText: "Para proyectos grandes, funciones especiales, rediseños o sitios avanzados.",
+    customPoint1: "Número de páginas personalizado",
+    customPoint2: "Secciones/funciones avanzadas",
+    customPoint3: "Cotización después de revisar",
+    requestQuote: "Solicitar cotización",
+    depositNote: "Aviso: los depósitos no son reembolsables una vez que comienza el trabajo. El saldo restante se paga después de la aprobación y antes de la entrega o publicación.",
+    applicationEyebrow: "Solicitud",
+    applicationTitle: "Dime qué quieres crear",
+    applicationText: "Llena esto con el mayor detalle posible. Después de enviarlo, recibiré tu solicitud por email y te contactaré.",
+    contactTitle: "¿Necesitas ayuda?",
+    contactText: "No hay problema. Escribe lo que sepas y yo te ayudo con el resto.",
+    labelName: "Nombre completo",
+    labelEmail: "Correo electrónico",
+    labelPhone: "Número de teléfono",
+    labelWebsiteType: "Tipo de sitio web",
+    chooseOption: "Elige una opción...",
+    typeBusiness: "Sitio de negocio",
+    typePortfolio: "Portafolio",
+    typeRestaurant: "Restaurante/menú",
+    typeEvent: "Página de evento",
+    typeCar: "Página de auto/proyecto",
+    typeOther: "Otro/personalizado",
+    labelDescription: "Describe el sitio que quieres",
+    labelColors: "Colores preferidos",
+    labelStyle: "Estilo de interfaz",
+    styleClean: "Limpio y moderno",
+    styleLuxury: "Elegante/profesional",
+    styleFun: "Divertido/colorido",
+    styleRetro: "Retro/pixel",
+    styleMinimal: "Mínimo/simple",
+    styleUnsure: "No estoy seguro",
+    labelPages: "Páginas necesarias",
+    labelBudget: "Rango de presupuesto",
+    budgetUnsure: "No estoy seguro",
+    labelDeadline: "Fecha límite preferida",
+    labelLanguage: "Idioma de contacto preferido",
+    labelFeatures: "Funciones que quieres",
+    depositAgreement: "Entiendo que si sigo adelante, el primer depósito del 50% no es reembolsable una vez que comienza el trabajo.",
+    submitButton: "Enviar solicitud",
+    footerRights: "Todos los derechos reservados.",
+    footerApply: "Iniciar solicitud web",
+    sending: "Enviando tu solicitud...",
+    success: "¡Gracias! Tu solicitud fue enviada correctamente.",
+    error: "Algo salió mal. Revisa tu configuración de Formspree e inténtalo de nuevo."
+  },
+  fr: {
+    navServices: "Services",
+    navProcess: "Processus",
+    navPricing: "Tarifs",
+    navApply: "Commencer",
+    heroEyebrow: "Sites web personnalisés pour entreprises, étudiants, créateurs et projets auto.",
+    heroTitle: "Décrivez votre idée de site. Je vous aide à la mettre en ligne.",
+    heroText: "Envoyez une demande simple avec le type de site, les couleurs, le style, les fonctionnalités et le délai. Je l’examinerai, vous contacterai et créerai un site propre adapté à vos besoins.",
+    heroButton: "Envoyer une demande",
+    heroPricing: "Voir les options d’acompte",
+    previewBadge: "Demande de site web",
+    previewTitle: "Que voulez-vous construire ?",
+    previewText: "Site d’entreprise, portfolio, événement, menu de restaurant, projet auto, landing page ou autre.",
+    noteTitle: "Simple pour tous",
+    noteText: "Formulaire facile, design lisible et support multilingue.",
+    servicesEyebrow: "Ce que je peux créer",
+    servicesTitle: "Services web",
+    servicesText: "Choisissez une option simple ou demandez une mise en page personnalisée.",
+    service1Title: "Sites d’entreprise",
+    service1Text: "Pages claires pour petites entreprises, services, prix, contact et localisation.",
+    service2Title: "Portfolios",
+    service2Text: "Présentez votre travail, projets, photos, CV ou marque personnelle.",
+    service3Title: "Pages auto / loisirs",
+    service3Text: "Pages de projet, galeries, spécifications, événements et communautés.",
+    service4Title: "Interface mobile",
+    service4Text: "Mises en page responsives pour téléphones, tablettes, laptops et desktops.",
+    processEyebrow: "Fonctionnement",
+    processTitle: "Un processus de commande simple",
+    processText: "Le but est de rendre le processus clair, équitable et facile à comprendre avant le début du travail.",
+    step1Title: "Envoyez votre demande",
+    step1Text: "Dites-moi le site dont vous avez besoin, les couleurs, le style, les pages et fonctionnalités.",
+    step2Title: "Je l’examine et vous contacte",
+    step2Text: "Je vérifierai les détails et répondrai avec questions, délai et devis final.",
+    step3Title: "Acompte non remboursable de 50%",
+    step3Text: "L’acompte réserve votre projet et couvre le début du design/développement.",
+    step4Title: "Révision finale et solde",
+    step4Text: "Après validation du site, les 50% restants sont payés avant la livraison finale ou publication.",
+    pricingEyebrow: "Acomptes",
+    pricingTitle: "Commencez avec un acompte de 50%",
+    pricingText: "Remplacez les boutons par vos liens Stripe. Les prix finaux peuvent être ajustés après examen de la demande.",
+    basicTitle: "Site de départ",
+    depositLabel: "acompte",
+    basicText: "Idéal pour une page simple.",
+    basicPoint1: "1 page",
+    basicPoint2: "Design responsive",
+    basicPoint3: "Section contact",
+    payStarter: "Payer l’acompte",
+    popular: "Populaire",
+    standardTitle: "Site standard",
+    depositLabel2: "acompte",
+    standardText: "Idéal pour petites entreprises, portfolios et pages de services.",
+    standardPoint1: "Jusqu’à 4 pages",
+    standardPoint2: "Couleurs et sections personnalisées",
+    standardPoint3: "SEO de base",
+    payStandard: "Payer l’acompte standard",
+    customTitle: "Site personnalisé",
+    customPrice: "Sur devis",
+    customText: "Pour projets plus grands, fonctionnalités spéciales, refontes ou sites avancés.",
+    customPoint1: "Nombre de pages personnalisé",
+    customPoint2: "Sections/fonctionnalités avancées",
+    customPoint3: "Devis après examen",
+    requestQuote: "Demander un devis",
+    depositNote: "Avis : les acomptes ne sont pas remboursables une fois le travail commencé. Le solde est dû après validation et avant la livraison ou publication.",
+    applicationEyebrow: "Demande",
+    applicationTitle: "Dites-moi ce que vous voulez créer",
+    applicationText: "Remplissez ceci avec autant de détails que possible. Après l’envoi, je recevrai votre demande par e-mail et vous contacterai.",
+    contactTitle: "Besoin d’aide ?",
+    contactText: "Aucun problème. Écrivez ce que vous savez, et je vous aiderai avec le reste.",
+    labelName: "Nom complet",
+    labelEmail: "E-mail",
+    labelPhone: "Téléphone",
+    labelWebsiteType: "Type de site",
+    chooseOption: "Choisir...",
+    typeBusiness: "Site d’entreprise",
+    typePortfolio: "Portfolio",
+    typeRestaurant: "Restaurant/menu",
+    typeEvent: "Page événement",
+    typeCar: "Page auto/projet",
+    typeOther: "Autre/personnalisé",
+    labelDescription: "Décrivez le site souhaité",
+    labelColors: "Couleurs préférées",
+    labelStyle: "Style d’interface",
+    styleClean: "Propre et moderne",
+    styleLuxury: "Luxe/professionnel",
+    styleFun: "Fun/coloré",
+    styleRetro: "Rétro/pixel",
+    styleMinimal: "Minimal/simple",
+    styleUnsure: "Pas sûr",
+    labelPages: "Pages nécessaires",
+    labelBudget: "Budget",
+    budgetUnsure: "Pas sûr",
+    labelDeadline: "Délai préféré",
+    labelLanguage: "Langue de contact préférée",
+    labelFeatures: "Fonctionnalités souhaitées",
+    depositAgreement: "Je comprends que si je continue, le premier acompte de 50% est non remboursable une fois le travail commencé.",
+    submitButton: "Envoyer la demande",
+    footerRights: "Tous droits réservés.",
+    footerApply: "Commencer une demande",
+    sending: "Envoi de votre demande...",
+    success: "Merci ! Votre demande a bien été envoyée.",
+    error: "Une erreur s’est produite. Vérifiez la configuration Formspree et réessayez."
+  }
+};
+
+const languageSelect = document.getElementById("languageSelect");
+const year = document.getElementById("year");
+const form = document.getElementById("websiteRequestForm");
+const formStatus = document.getElementById("formStatus");
+const submitButton = document.getElementById("submitButton");
+
+year.textContent = new Date().getFullYear();
+
+function applyLanguage(language) {
+  const dictionary = translations[language] || translations.en;
+
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    if (dictionary[key]) {
+      element.textContent = dictionary[key];
+    }
+  });
+
+  document.documentElement.lang = language;
+  localStorage.setItem("preferredLanguage", language);
+}
+
+const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+languageSelect.value = savedLanguage;
+applyLanguage(savedLanguage);
+
+languageSelect.addEventListener("change", (event) => {
+  applyLanguage(event.target.value);
+});
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const currentLanguage = languageSelect.value;
+  const dictionary = translations[currentLanguage] || translations.en;
+
+  formStatus.textContent = dictionary.sending;
+  formStatus.className = "form-status mt-3 text-info";
+  submitButton.disabled = true;
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (response.ok) {
+      form.reset();
+      formStatus.textContent = dictionary.success;
+      formStatus.className = "form-status mt-3 text-success";
+    } else {
+      formStatus.textContent = dictionary.error;
+      formStatus.className = "form-status mt-3 text-warning";
+    }
+  } catch (error) {
+    formStatus.textContent = dictionary.error;
+    formStatus.className = "form-status mt-3 text-warning";
+  } finally {
+    submitButton.disabled = false;
+  }
+});
