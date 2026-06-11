@@ -21,7 +21,7 @@ const translations = {
     service1Text: "Clean pages for small businesses, services, pricing, contact info, and location.",
     service2Title: "Portfolios",
     service2Text: "Showcase your work, projects, photos, résumé, or personal brand.",
-    service3Title: "Car / Hobby Pages",
+    service3Title: "Hobby Pages",
     service3Text: "Build pages, galleries, specs, events, and community-style landing pages.",
     service4Title: "Mobile-Friendly UI",
     service4Text: "Responsive layouts that work on phones, tablets, laptops, and desktops.",
